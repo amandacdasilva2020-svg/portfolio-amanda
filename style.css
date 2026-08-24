@@ -3283,3 +3283,76 @@ RESPONSIVIDADE PARA CELULAR
         min-width: 0 !important;
         max-width: 100% !important;
     }
+/* =========================================
+   CORREÇÃO APENAS DA SEÇÃO INICIAL - CELULAR
+========================================= */
+
+@media (max-width: 768px) {
+
+    /* Seção inicial */
+    #inicio,
+    .hero {
+        width: 100% !important;
+        max-width: 100vw !important;
+        min-width: 0 !important;
+        overflow: hidden !important;
+    }
+
+    /* Conteúdo interno */
+    .hero-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        padding: 80px 30px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Todos os textos não passam da tela */
+    .hero-content h1,
+    .hero-content h2,
+    .hero-content p,
+    .hero-content span {
+        max-width: 100% !important;
+        min-width: 0 !important;
+        overflow-wrap: break-word !important;
+        word-wrap: break-word !important;
+    }
+
+    /* Título Amanda */
+    .hero h1 {
+        font-size: clamp(48px, 15vw, 72px) !important;
+        line-height: 0.95 !important;
+        letter-spacing: -2px !important;
+    }
+
+    /* Texto de descrição */
+    .hero-description,
+    .hero p {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        font-size: 18px !important;
+        line-height: 1.5 !important;
+    }
+
+    /* Botões */
+    .hero-buttons {
+        display: flex !important;
+        flex-direction: column !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+
+        gap: 15px !important;
+    }
+
+    .hero-buttons a,
+    .hero-buttons button {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        box-sizing: border-box !important;
+    }
+
+}
